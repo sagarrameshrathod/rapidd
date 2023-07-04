@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Job</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-bar">
+        <div class="nav-menu" onclick="toggleMenu()">
+          <img src="menu.png" alt="menu" class="menu" id="menuToggle">
+        </div>
+        <div class="nav-left">
+          <img src="m.png" alt="logo" class="nav-logo">
+          <span class="span">MAYNOOTH</span>
+        </div>
+        <div class="nav-center" id="nav-center">
+          <ul class="nav-list" id="navbarMenu">
+            <li>
+              <div class="hover-element" onmouseover="showPopup(event)" onmouseup="hidePopup(event)"> 
+                Our Offer
+                <div class="popup-box">
+                  <div class="categories">
+                    <h4 class="hu">Categories</h4>
+                    <ul class="cat-list">
+                      <li class="list">Living Room Furniture</li>
+                      <li class="list">Nursery Furniture</li>
+                      <li class="list">Bedroom Furniture</li>
+                      <li class="list">Kitchen & Dining Furniture</li>
+                      <li class="list">Home Office Furniture</li>
+                    </ul>
+                  </div>
+                  <div class="featured">
+                    <h4 class="hu">Featured</h4>
+                    <ul class="cat-list">
+                      <li class="list">Furniture Deals</li>
+                      <li class="list">Furniture Deals</li>
+                      <li class="list">Furniture Deals</li>
+                      <li class="list">Dorm Furniture</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="srr"><a href="#" class="nav-link">Bedroom</a></li>
+            <li><a href="#" class="nav-link">Kitchen & Dining</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link"><img src="search.png" alt="search" class="hide"></a></li>
+            <li><a href="#" class="nav-link"><img src="shopping_cart.png" alt=""></a></li>
+            <li><a href="#" class="nav-link"><img src="user.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="container-1">
+      <div class="ctn-text">
+        <h4 id="h4" class="ctn-head">NEW ARRIVALS</h4>
+        <h1 class="ctn-head">Form Milkyway </h1>
+        <h1 class="ctn-head">Ivory Chair</h1>
+        <button type="button" class="btn btn-small">
+          <a href="#shop" class="nav-link">SHOP NOW</a>
+        </button>
+      </div>
+      <div class="ctn-media">
+        <a href="" class="ctn-image"><img src="facebook.png" alt="facebook"></a>
+        <a href="" class="ctn-image"><img src="instagram.png" alt="instagram"></a>
+        <a href="" class="ctn-image"><img src="path.png" alt="path"></a>
+      </div>
+    </div>
+    <div class="container-2">
+      <img src="sofa.png" alt="image" class="sofa">
+    </div>
+  </div>
+  <div class="srr21">
+    <div class="new">
+      <h2>New In</h2>
+      <p class="new-p">Lorem ipsum dolor sit amet, consectetur.</p>
+    </div>
+    <div class="product-navbar">
+      <a href="" class="product-link">SOFA</a>
+      <a href="" class="product-link">LIGHTS</a>
+      <a href="" class="product-link">CHAR</a>
+      <a href="" class="product-link">WARDROBE</a>
+      <a href="" class="product-link">ALL</a>
+    </div>
+    <div class="filter-product" id="shop">
+      <div class="filters">
+        <div class="color filter">
+          <h4>Colors</h4>
+          <div class="radio-color">
+            <input type="radio" name="color" value="red" class="radio-btn red" id="radio1">
+            <input type="radio" name="color" value="green" class="radio-btn green" id="radio2">
+            <input type="radio" name="color" value="blue" class="radio-btn blue" id="radio3">
+            <input type="radio" name="color" value="yellow" class="radio-btn yellow" id="radio4">
+          </div>
+          <div class="radio-color">
+            <input type="radio" name="color" value="purple" class="radio-btn purple" id="radio5">
+            <input type="radio" name="color" value="orange" class="radio-btn orange" id="radio6">
+            <input type="radio" name="color" value="pink" class="radio-btn pink" id="radio7">
+            <input type="radio" name="color" value="gray" class="radio-btn gray" id="radio8">
+          </div>
+        </div>
+        <div class="filter">
+          <h4>Filter</h4> 
+        </div>
+        <div class="materials filter">
+          <h4>Materials</h4>
+          <div class="metal">
+            <label for="metal">Metal</label>
+            <input type="checkbox" name="metal" id="metal">
+          </div>
+          <div class="metal">
+            <label for="metal">Wodden</label>
+            <input type="checkbox" name="metal" id="metal">
+          </div>
+          <div class="metal">
+            <label for="metal">Fabric</label>
+            <input type="checkbox" name="metal" id="metal">
+          </div>
+          <div class="metal">
+            <label for="metal">Foam</label>
+            <input type="checkbox" name="metal" id="metal">
+          </div>
+          <div class="metal">
+            <label for="metal">Natural Skin</label>
+            <input type="checkbox" name="metal" id="metal">
+          </div>
+          <div class="metal">
+            <label for="metal">Synthetic fiber</label>
+            <input type="checkbox" name="metal" id="metal">
+          </div>
+        </div>
+        <div class="price filter">
+          <h4>Price</h4>
+          <input type="range" id="price-range" name="price" min="0" max="200" step="1" value="100">
+          <label for="price-range" id="price-label">Price: $100</label>
+
+        </div>
+        <div class="new-in filter">
+          <h4>New In</h4>
+        </div>
+        <div class="sale-off filter">
+          <h4>Sale Off</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="box box-1">
+          <div class="item item-1">
+            <p class="product-news">New</p>
+            <img src="product5.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-2">
+          <div class="item item-2">
+            <p class="product-news">-45%</p>
+            <img src="product4.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-3">
+          <div class="item item-3">
+            <p class="product-news">New</p>
+            <img src="product6.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-4">
+          <div class="item item-4">
+            <p class="product-news">New</p>
+            <img src="product1.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-5">
+          <div class="item item-5">
+            <p class="product-news">New</p>
+            <img src="product8.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-6">
+          <div class="item item-6">
+            <p class="product-news">-35%</p>
+            <img src="product9.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-7">
+          <div class="item item-7">
+            <p class="product-news">New</p>
+            <img src="product2.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-7">
+          <div class="item item-7">
+            <p class="product-news">-45%</p>
+            <img src="product4.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+        <div class="box box-7">
+          <div class="item item-7">
+            <p class="product-news">New</p>
+            <img src="product7.png" alt="product1" class="product1">
+            <div class="product-view">
+              <img src="favorite.png" alt="favorite" class="view">
+              <img src="shopping.png" alt="shopping" class="view">
+              <img src="visibility.png" alt="visibility" class="view">
+            </div>
+          </div>
+          <p>Patio Arm Chair</p>
+          <h4>150$</h4>
+        </div>
+      </div>
+    </div>
+    <div class="load-btn">
+      <button type="button" class="btn">LOAD MORE</button>
+    </div>
+  </div>
+  <script src="srcipt.js"></script>
+</body>
+</html>
